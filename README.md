@@ -1,3 +1,6 @@
+# This is a document to be revised！
+# 这是一个待修正文档
+
 # BetterCookie Mod
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)
@@ -5,17 +8,17 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.0-lightgrey.svg)
 
-## 📖 简介 / Introduction
+## 📖 Introduction
 
 **English** | [**中文**](#中文)
 
 A lightweight Minecraft 1.21.1 mod based on NeoForge v21.1.218 that enhances the storage efficiency and quality of life for cookies in-game. This mod adds new blocks and items to improve the cookie experience while maintaining the vanilla feel.
 
-### ✨ 主要特性 / Key Features
+### ✨ Key Features
 
-- **曲奇块 (Cookie Block)**: Compact storage solution for cookies
-- **曲奇碎 (Cookie Pieces)**: New food item with unique mechanics
-- **无序合成配方 (Shapeless Recipes)**:
+- **Cookie Block**: Compact storage solution for cookies
+- **Cookie Piece**: New food item with unique mechanics
+- **Shapeless Recipes**:
   - 64 Cookie Pieces = 8 Cookies
   - 8 Cookies = 1 Cookie Block
   - 1 Cookie Block = 8 Cookies
@@ -25,13 +28,13 @@ A lightweight Minecraft 1.21.1 mod based on NeoForge v21.1.218 that enhances the
 
 ---
 
-## 🚀 安装 / Installation
+## 🚀 Installation
 
-### 要求 / Requirements
+### Requirements
 - **Minecraft**: 1.21.1
 - **NeoForge**: 21.1.218 或兼容版本 / or compatible version
 
-### 安装步骤 / Steps
+### Steps
 1. 安装 [NeoForge](https://neoforged.net/) 21.1.218
 2. 下载最新版本的 BetterCookie Mod
 3. 将 `.jar` 文件放入 `mods` 文件夹
@@ -39,25 +42,24 @@ A lightweight Minecraft 1.21.1 mod based on NeoForge v21.1.218 that enhances the
 
 ---
 
-## 🍪 使用方法 / Usage
+## 🍪 Usage
 
-### 合成配方 / Crafting Recipes
+### Crafting Recipes
 
-| 合成 / Crafting | 材料 / Materials | 产出 / Output |
+| Crafting |  Materials |  Output |
 |----------------|-----------------|--------------|
-| 曲奇块 / Cookie Block | 8 曲奇 / 8 Cookies | 1 曲奇块 / 1 Cookie Block |
-| 曲奇碎 / Cookie Pieces | 1 曲奇 / 1 Cookie | 8 曲奇碎 / 8 Cookie Pieces |
-| 曲奇 / Cookies | 64 曲奇碎 / 64 Cookie Pieces | 8 曲奇 / 8 Cookies |
+| Cookie Block | 8 Cookies |  1 Cookie Block |
+| Cookie Pieces | 1 Cookie | 8 Cookie Pieces |
+|  Cookies | 64 Cookie Pieces |  8 Cookies |
 
-### 游戏内功能 / In-Game Features
-- **右键点击曲奇块**可分解为8个曲奇
+### In-Game Features
 - **曲奇碎**提供快速恢复饥饿值的零食
 - 所有配方均为无序合成可在工作台中任意摆放
 - 完全兼容原版游戏机制
 
 ---
 
-## 🗂️ 项目结构 / Project Structure
+## 🗂️ Project Structure
 ```
 
 bettercookie_mod-1.0.0-1.21.1.jar
@@ -73,20 +75,19 @@ bettercookie_mod-1.0.0-1.21.1.jar
 ├── data/bettercookie/
 │   ├── recipes/ # 合成配方
 │   └── tags/# 标签定义
-└── com/hainabaichuan1019/bettercookies/
+└── com/hainabaichuan75/bettercookies/
 └── *.java   # 源代码文件
 
-```text
 ---
-
-## 🛠️ 开发指南 / Development Guide
-
-### 环境搭建 / Setup Environment
+```
+### 🛠️ Development Guide
+---
+### Setup Environment
 1. 克隆此仓库
 2. 确保已安装 JDK 21 或更高版本
 3. 配置 NeoForge MDK 开发环境
 
-### 构建指令 / Build Commands
+### Build Commands
 ```bash
 # 清理项目
 ./gradlew clean
@@ -101,7 +102,7 @@ bettercookie_mod-1.0.0-1.21.1.jar
 ./gradlew runServer
 ```
 
-### 贡献指南 / Contributing
+### Contributing
 
 欢迎提交 Pull Request！请确保：
 1. 代码风格与现有代码保持一致
@@ -114,14 +115,14 @@ bettercookie_mod-1.0.0-1.21.1.jar
 
 ---
 
-## 📄 许可证 / License
+## 📄 License
 
 本项目采用 MIT 许可证-查看 [LICENSE](https://license/) 文件了解详情。
 
 ```text
 MIT License
 
-Copyright (c) 2024 hainabaichuan1019
+Copyright (c) 2024 hainabaichuan75
 
 Permission is hereby granted free of charge to any person obtaining a copy
 of this software and associated documentation files (the \Software\) to deal
@@ -147,7 +148,7 @@ SOFTWARE.
 ## 🙏 致谢 / Credits
 
 ### 作者 / Author
-- **hainabaichuan1019** -项目创建者和主要开发者
+- **hainabaichuan75** -项目创建者和主要开发者
 
 ### 特别感谢 / Special Thanks
 - **NeoForge 团队** -提供强大的模组加载器
@@ -157,14 +158,14 @@ SOFTWARE.
 - **所有测试者** -反馈和错误报告
 
 ### 翻译贡献 / Translation Credits
-- 英文(en_us): hainabaichuan1019
+- 英文(en_us): hainabaichuan75
 
-- 中文(zh_cn): hainabaichuan1019
+- 中文(zh_cn): hainabaichuan75
 
 ---
 
 ## 📞 联系方式 / Contact
-- **GitHub**: [hainabaichuan1019](https://github.com/hainabaichuan1019)
+- **GitHub**: [hainabaichuan75](https://github.com/hainabaichuan75)
 
 - **模组页面**: [Modrinth](https://modrinth.com/) / [CurseForge](https://curseforge.com/)
 
