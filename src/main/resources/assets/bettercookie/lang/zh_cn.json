@@ -1,0 +1,21 @@
+{
+  "item.bettercookie.cookie_pieces": "曲奇碎",
+
+  "itemGrop.bettercookie_tab": "更好的曲奇",
+
+  "block.bettercookie.cookie_block": "曲奇块",
+
+  "bettercookie.configuration.enableVanillaCookieFastEat": "曲奇进食耗时覆写",
+  "bettercookie.configuration.vanillaCookieEatDuration": "曲奇进食耗时（单位：刻）",
+  "bettercookie.configuration.vanillaCookieAlwaysEdible": "曲奇进食无视饱腹（存在Bug)",
+  "bettercookie.configuration.general": "生活质量",
+
+
+  "examplemod.configuration.title": "Example Mod Configs",
+  "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
+  "examplemod.configuration.section.examplemod.common.toml.title": "Example Mod Configs",
+  "examplemod.configuration.items": "Item List",
+  "examplemod.configuration.logDirtBlock": "Log Dirt Block",
+  "examplemod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "examplemod.configuration.magicNumber": "Magic Number"
+}

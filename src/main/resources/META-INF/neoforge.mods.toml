@@ -1,0 +1,83 @@
+# This is an hainabaichuan75 neoforge.mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml" #mandatory
+
+# A version range to match for said mod loader - for regular FML @Mod it will be the FML version. This is currently 2.
+loaderVersion="[4,)" #mandatory
+
+# The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+# Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
+license="MIT"
+
+# A URL to refer people to when problems occur with this mod
+# issueTrackerURL="https://github.com/yourusername/bettercookie/issues" #optional
+
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+
+# The modid of the mod
+modId="bettercookie" #mandatory
+
+# The version number of the mod
+version="1.0.0" #mandatory
+
+# A display name for the mod
+displayName="BetterCookie" #mandatory
+
+# A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
+# updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+
+# A URL for the "homepage" for this mod, displayed in the mod UI
+# displayURL="https://modrinth.com/mod/bettercookie" #optional
+
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="bettercookie.png" #optional
+
+# A text field displayed in the mod UI
+credits="Thanks for Playing!" #optional
+
+# The authors of the mod, displayed in the mod UI (optional)
+authors="hainabaichuan75"
+
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Shapeless Recipes 64 Cookie Pieces = 8 Cookie = 1 Cookie Block
+无序配方 64 曲奇碎 = 8 曲奇 = 1 曲奇块
+
+This is a Minecraft 1.21.1 mod based on Neoforge v21.1.218. It introduces a new "block" and a "food item," along with several modifications to the eating mechanics. The mod aims to enhance the storage efficiency and "quality of life" of the in-game food "cookies." The package is lightweight and strives to respect the original experience of the game as much as possible.
+
+这是一个基于Neoforge v21.1.218的《Minecraft》1.21.1 MOD。新增了一种新的"方块"和一个"食物"，以及一些进食机制修改项。本模组旨在提高游戏中食物"曲奇"的空间存储效率与"生活质量"。包体轻量化，且尽可能尊重游戏原汁原味的体验。
+'''
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.bettercookie]] #optional
+# the modid of the dependency
+modId="neoforge" #mandatory
+# The type of the dependency. Can be one of "required", "optional", "incompatible" or "discouraged" (case insensitive).
+# 'required' requires the mod to exist, 'optional' does not
+# 'incompatible' will prevent the game from loading when the mod exists, and 'discouraged' will show a warning
+type="required" #mandatory
+# Optional field describing why the dependency is required or why it is incompatible
+# reason="..."
+# The version range of the dependency
+versionRange="[21.1.218,)" #mandatory
+# An ordering relationship for the dependency.
+# BEFORE - This mod is loaded BEFORE the dependency
+# AFTER - This mod is loaded AFTER the dependency
+ordering="NONE"
+# Side this dependency is applied on - BOTH, CLIENT, or SERVER
+side="BOTH"
+
+# Here's another dependency
+[[dependencies.bettercookie]]
+modId="minecraft"
+type="required"
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"

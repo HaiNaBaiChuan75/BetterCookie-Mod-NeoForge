@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bettercookie:cookie_pieces"
+    },
+    {
+      "item": "bettercookie:cookie_pieces"
+    },
+    {
+      "item": "bettercookie:cookie_pieces"
+    },
+    {
+      "item": "bettercookie:cookie_pieces"
+    },
+    {
+      "item": "bettercookie:cookie_pieces"
+    },
+    {
+      "item": "bettercookie:cookie_pieces"
+    },
+    {
+      "item": "bettercookie:cookie_pieces"
+    },
+    {
+      "item": "bettercookie:cookie_pieces"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:cookie"
+  }
+}
