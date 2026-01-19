@@ -1,0 +1,21 @@
+{
+  "item.bettercookie.cookie_pieces": "Cookie Pieces",
+
+  "itemGrop.bettercookie_tab": "Better Cookie",
+
+  "block.bettercookie.cookie_block": "Cookie Block",
+
+  "bettercookie.configuration.enableVanillaCookieFastEat": "Cookie Consumption Duration Override",
+  "bettercookie.configuration.vanillaCookieEatDuration": "Time taken for cookie consumption (unit: tick)",
+  "bettercookie.configuration.vanillaCookieAlwaysEdible": "Even when full, one can still eat cookies.（Have Bug)",
+  "bettercookie.configuration.general": "Quality of life",
+
+
+  "examplemod.configuration.title": "Example Mod Configs",
+  "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
+  "examplemod.configuration.section.examplemod.common.toml.title": "Example Mod Configs",
+  "examplemod.configuration.items": "Item List",
+  "examplemod.configuration.logDirtBlock": "Log Dirt Block",
+  "examplemod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "examplemod.configuration.magicNumber": "Magic Number"
+}
