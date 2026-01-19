@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bettercookie:block/cookie_block"
+  }
+}
