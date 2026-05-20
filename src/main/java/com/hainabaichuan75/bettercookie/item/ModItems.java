@@ -3,7 +3,6 @@ package com.hainabaichuan75.bettercookie.item;
 import com.hainabaichuan75.bettercookie.bettercookie;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
@@ -44,7 +43,7 @@ public class ModItems {
                                     .fast()
                                     .alwaysEdible()
                                     .build())));
-
+    //浆果曲奇碎
     public static final DeferredItem<Item> BERRY_COOKIE_PIECES =
             ITEMS.register("berry_cookie_pieces", () -> new FastEatFood(
                     new Item.Properties()
@@ -55,9 +54,9 @@ public class ModItems {
                                     .alwaysEdible()
                                     .build())));
 
-
-    public static final DeferredItem<Item> BERRY_COOKIES =
-            ITEMS.register("berry_cookies", () -> new Item(
+    //浆果曲奇
+    public static final DeferredItem<Item> BERRY_COOKIE =
+            ITEMS.register("berry_cookie", () -> new Item(
                     new Item.Properties()
                             .food(new FoodProperties.Builder()
                                     .nutrition(2)

@@ -26,9 +26,11 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGrop.bettercookie_tab"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.COOKIE_BLOCK);
+                        output.accept(ModBlocks.BERRY_COOKIE_BLOCK);
                         output.accept(Items.COOKIE);
-                        output.accept(ModItems.BERRY_COOKIES);
+                        output.accept(ModItems.BERRY_COOKIE);
                         output.accept(ModItems.COOKIE_PIECES);
+                        output.accept(ModItems.BERRY_COOKIE_PIECES);
 
                     }).build());
     public static void register(IEventBus eventBus) {

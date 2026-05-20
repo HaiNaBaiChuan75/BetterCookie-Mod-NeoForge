@@ -1,10 +1,12 @@
 {
   "item.bettercookie.cookie_pieces": "曲奇碎",
-  "item.bettercookie.berry_cookies": "浆果曲奇",
+  "block.bettercookie.cookie_block": "曲奇块",
+
+  "item.bettercookie.berry_cookie": "浆果曲奇",
+  "item.bettercookie.berry_cookie_pieces": "浆果曲奇碎",
+  "block.bettercookie.berry_cookie_block": "浆果曲奇块",
 
   "itemGrop.bettercookie_tab": "更好的曲奇",
-
-  "block.bettercookie.cookie_block": "曲奇块",
 
   "bettercookie.configuration.enableVanillaCookieFastEat": "曲奇进食耗时覆写",
   "bettercookie.configuration.vanillaCookieEatDuration": "曲奇进食耗时（单位：刻）",
