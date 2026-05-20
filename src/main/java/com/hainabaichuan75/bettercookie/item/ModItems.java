@@ -45,6 +45,16 @@ public class ModItems {
                                     .alwaysEdible()
                                     .build())));
 
+    public static final DeferredItem<Item> BERRY_COOKIE_PIECES =
+            ITEMS.register("berry_cookie_pieces", () -> new FastEatFood(
+                    new Item.Properties()
+                            .food(new FoodProperties.Builder()
+                                    .nutrition(0)
+                                    .saturationModifier(0.25F)
+                                    .fast()
+                                    .alwaysEdible()
+                                    .build())));
+
 
     public static final DeferredItem<Item> BERRY_COOKIES =
             ITEMS.register("berry_cookies", () -> new Item(
