@@ -10,6 +10,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -24,8 +25,13 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.COOKIE_PIECES.asItem()))
                     .title(Component.translatable("itemGrop.bettercookie_tab"))
                     .displayItems((parameters, output) -> {
-                        output.accept(ModItems.COOKIE_PIECES);
                         output.accept(ModBlocks.COOKIE_BLOCK);
+                        output.accept(ModBlocks.BERRY_COOKIE_BLOCK);
+                        output.accept(Items.COOKIE);
+                        output.accept(ModItems.BERRY_COOKIE);
+                        output.accept(ModItems.COOKIE_PIECES);
+                        output.accept(ModItems.BERRY_COOKIE_PIECES);
+
                     }).build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

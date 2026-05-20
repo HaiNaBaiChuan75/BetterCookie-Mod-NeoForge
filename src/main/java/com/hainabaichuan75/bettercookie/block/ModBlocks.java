@@ -17,9 +17,13 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(bettercookie.MOD_ID);
 
-    //曲奇块类
+    //曲奇块
     public static final DeferredBlock<Block> COOKIE_BLOCK =
             registerBlock("cookie_block",() -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.1F).sound(SoundType.GRASS)));
+    //浆果曲奇块
+    public static final DeferredBlock<Block> BERRY_COOKIE_BLOCK =
+            registerBlock("berry_cookie_block",() -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.1F).sound(SoundType.GRASS)));
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {

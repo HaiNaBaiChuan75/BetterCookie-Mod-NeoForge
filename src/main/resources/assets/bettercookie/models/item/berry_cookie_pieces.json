@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bettercookie:item/berry_cookies"
+    "layer0": "bettercookie:item/berry_cookie_pieces"
   }
 }
