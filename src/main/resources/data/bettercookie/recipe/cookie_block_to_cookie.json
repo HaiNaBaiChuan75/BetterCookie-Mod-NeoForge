@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "bettercookie_alternatives",
   "category": "misc",
   "ingredients": [
     { "item": "bettercookie:cookie_block" }

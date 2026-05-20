@@ -1,5 +1,6 @@
 {
   "item.bettercookie.cookie_pieces": "Cookie Pieces",
+  "item.bettercookie.berry_cookies": "Berry_Cookies",
 
   "itemGrop.bettercookie_tab": "Better Cookie",
 
@@ -7,7 +8,7 @@
 
   "bettercookie.configuration.enableVanillaCookieFastEat": "Cookie Consumption Duration Override",
   "bettercookie.configuration.vanillaCookieEatDuration": "Time taken for cookie consumption (unit: tick)",
-  "bettercookie.configuration.vanillaCookieAlwaysEdible": "Even when full, one can still eat cookies.（Have Bug)",
+  "bettercookie.configuration.vanillaCookieAlwaysEdible": "Even when full, one can still eat cookies.",
   "bettercookie.configuration.general": "Quality of life",
 
 

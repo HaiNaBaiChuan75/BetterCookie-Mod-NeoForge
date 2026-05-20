@@ -40,17 +40,29 @@ public class FoodEatEventHandler {
     private static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
         Player player = event.getEntity();
         ItemStack stack = event.getItemStack();
-        // 只处理原版曲奇或模组曲奇
         if (!stack.is(Items.COOKIE) && !stack.is(ModItems.BERRY_COOKIES)) return;
 
-        // 如果玩家不需要食物（即饱食度满或不需要进食）
-        if (!player.getFoodData().needsFood()) {
-            // 获取玩家使用的手（主手或副手）
+        // 从配置读取是否允许饱腹吃（默认 true）
+        boolean alwaysEdible = ModConfig.VANILLA_COOKIE_ALWAYS_EDIBLE.get();
+        if (alwaysEdible && !player.getFoodData().needsFood()) {
             InteractionHand hand = event.getHand();
-            // 手动开始使用物品（这会触发 LivingEntityUseItemEvent.Start）
             player.startUsingItem(hand);
-            // 取消原版默认的事件处理，避免重复或冲突
             event.setCanceled(true);
         }
     }
 }
+/*
+private static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
+    Player player = event.getEntity();
+    ItemStack stack = event.getItemStack();
+    if (!stack.is(Items.COOKIE) && !stack.is(ModItems.BERRY_COOKIES)) return;
+
+    // 从配置读取是否允许饱腹吃（默认 true）
+    boolean alwaysEdible = ModConfig.VANILLA_COOKIE_ALWAYS_EDIBLE.get();
+    if (alwaysEdible && !player.getFoodData().needsFood()) {
+        InteractionHand hand = event.getHand();
+        player.startUsingItem(hand);
+        event.setCanceled(true);
+    }
+}
+* */
