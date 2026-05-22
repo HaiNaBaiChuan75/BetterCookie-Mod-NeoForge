@@ -25,14 +25,14 @@ public class CookieLauncherItem extends Item {
                 // 创建曲奇抛射物
                 ThrownCookie cookie = new ThrownCookie(level, player);
                 cookie.setCookieType(ammo);      // 记录曲奇种类（用于渲染/伤害）
-                cookie.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
+                cookie.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1, 0F);
                 level.addFreshEntity(cookie);
                 // 消耗一个弹药
                 ammo.shrink(1);
                 // 损耗耐久
                 launcher.hurtAndBreak(1, player, LivingEntity.getSlotForHand(hand));
             }
-            player.getCooldowns().addCooldown(this, 2); // 1秒冷却
+            player.getCooldowns().addCooldown(this, 1); // 1秒冷却
             return InteractionResultHolder.sidedSuccess(launcher, level.isClientSide);
         }
         return InteractionResultHolder.fail(launcher);

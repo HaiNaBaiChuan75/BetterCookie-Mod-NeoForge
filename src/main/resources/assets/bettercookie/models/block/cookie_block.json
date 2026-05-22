@@ -1,10 +1,6 @@
 {
-  "parent": "minecraft:block/orientable_with_bottom",
+  "parent": "block/cube_all",
   "textures": {
-    "bottom": "bettercookie:block/cookie_block_top",
-    "front": "bettercookie:block/cookie_block_side",
-    "particle": "bettercookie:block/cookie_block_side",
-    "side": "bettercookie:block/cookie_block_side",
-    "top": "bettercookie:block/cookie_block_top"
+    "all": "bettercookie:block/cookie_block"
   }
 }

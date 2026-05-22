@@ -18,10 +18,4 @@ public class ModEntities {
                     .updateInterval(10)
                     .build("thrown_cookie"));
 
-    public static final DeferredHolder<EntityType<?>, EntityType<CookiePiece>> COOKIE_PIECE =
-            ENTITIES.register("cookie_piece", () -> EntityType.Builder.<CookiePiece>of(CookiePiece::new, MobCategory.MISC)
-                    .sized(0.25F, 0.25F)
-                    .clientTrackingRange(4)
-                    .updateInterval(20)
-                    .build("cookie_piece"));
 }
