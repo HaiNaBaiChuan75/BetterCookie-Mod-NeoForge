@@ -65,6 +65,17 @@ public class ModItems {
                                     .alwaysEdible()
                                     .build())));
 
+    //曲奇发射器
+    public static final DeferredItem<Item> COOKIE_LAUNCHER =
+            ITEMS.register("cookie_launcher", () -> new CookieLauncherItem(
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .durability(384)));
+
+    //测试弹药
+    public static final DeferredItem<Item> COOKIE_AMMO = ITEMS.register("cookie_ammo",
+            () -> new Item(new Item.Properties()));
+
     /*
     public static void 公共的，静态的，无返回值
     register 意为“注册”

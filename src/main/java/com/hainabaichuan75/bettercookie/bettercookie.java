@@ -1,6 +1,8 @@
 package com.hainabaichuan75.bettercookie;
 
 import com.hainabaichuan75.bettercookie.block.ModBlocks;
+import com.hainabaichuan75.bettercookie.client.ClientEvents;
+import com.hainabaichuan75.bettercookie.entity.ModEntities;
 import com.hainabaichuan75.bettercookie.event.FoodEatEventHandler;
 import com.hainabaichuan75.bettercookie.item.ModCreativeModeTabs;
 import com.hainabaichuan75.bettercookie.item.ModItems;
@@ -25,12 +27,17 @@ public class bettercookie {
     public static final String MOD_ID = "bettercookie";
     public static final Logger LOGGER = LogUtils.getLogger();
 
+
     public bettercookie(IEventBus modEventBus, ModContainer modContainer) {
         modContainer.registerConfig(Type.COMMON, com.hainabaichuan75.bettercookie.config.ModConfig.SPEC);
 
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        ModEntities.ENTITIES.register(modEventBus);
+
+        modEventBus.addListener(ClientEvents::registerRenderers);
 
         ModItems.register(modEventBus);
         FoodEatEventHandler.register(modEventBus);
