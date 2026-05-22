@@ -13,6 +13,7 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.world.item.ItemStack;
 import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
 public class ClientEvents {
@@ -37,7 +38,7 @@ public class ClientEvents {
             poseStack.translate(0, entity.getBbHeight() / 2, 0);
             ItemStack stack = entity.getCookieType();
             if (stack.isEmpty()) {
-                stack = ModItems.COOKIE_PIECES.get().getDefaultInstance();
+                stack = Items.COOKIE.getDefaultInstance();
             }
             itemRenderer.renderStatic(stack, ItemDisplayContext.GROUND, light, OverlayTexture.NO_OVERLAY,
                     poseStack, buffer, entity.level(), 0);

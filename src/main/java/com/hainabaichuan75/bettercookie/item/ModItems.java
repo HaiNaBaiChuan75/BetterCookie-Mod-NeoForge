@@ -72,9 +72,6 @@ public class ModItems {
                             .stacksTo(1)
                             .durability(384)));
 
-    //测试弹药
-    public static final DeferredItem<Item> COOKIE_AMMO = ITEMS.register("cookie_ammo",
-            () -> new Item(new Item.Properties()));
 
     /*
     public static void 公共的，静态的，无返回值

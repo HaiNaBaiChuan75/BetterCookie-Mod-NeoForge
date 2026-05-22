@@ -32,7 +32,7 @@ public class CookieLauncherItem extends Item {
                 // 损耗耐久
                 launcher.hurtAndBreak(1, player, LivingEntity.getSlotForHand(hand));
             }
-            player.getCooldowns().addCooldown(this, 20); // 1秒冷却
+            player.getCooldowns().addCooldown(this, 2); // 1秒冷却
             return InteractionResultHolder.sidedSuccess(launcher, level.isClientSide);
         }
         return InteractionResultHolder.fail(launcher);
