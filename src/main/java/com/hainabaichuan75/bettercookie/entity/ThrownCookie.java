@@ -81,7 +81,7 @@ public class ThrownCookie extends Projectile {
     public void tick() {
         super.tick();
         // 重力影响
-        this.setDeltaMovement(this.getDeltaMovement().add(0, 0, 0));
+        this.setDeltaMovement(this.getDeltaMovement().add(0, -0.2, 0));
         // 移动并检查碰撞
         HitResult hit = ProjectileUtil.getHitResultOnMoveVector(this, this::canHitEntity);
         if (hit.getType() != HitResult.Type.MISS) {

@@ -27,13 +27,19 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.COOKIE_BLOCK);
                         output.accept(ModBlocks.BERRY_COOKIE_BLOCK);
+                        output.accept(ModBlocks.FROSTED_COOKIE_BLOCK);
+
                         output.accept(ModBlocks.COOKIE_LOG);
+
                         output.accept(Items.COOKIE);
-                        output.accept(ModItems.FROSTED_COOKIE);
                         output.accept(ModItems.BERRY_COOKIE);
+                        output.accept(ModItems.FROSTED_COOKIE);
+
                         output.accept(ModItems.COOKIE_PIECES);
                         output.accept(ModItems.BERRY_COOKIE_PIECES);
+                        output.accept(ModItems.FROSTED_COOKIE_PIECES);
 
+                        output.accept(ModItems.COOKIE_LAUNCHER);
                     }).build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

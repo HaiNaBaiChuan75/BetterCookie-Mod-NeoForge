@@ -76,6 +76,18 @@ public class ModItems {
                                     .alwaysEdible()
                                     .build())));
 
+    //糖霜曲奇碎
+    public static final DeferredItem<Item> FROSTED_COOKIE_PIECES =
+            ITEMS.register("frosted_cookie_pieces", () -> new FastEatFood(
+                    new Item.Properties()
+                            .food(new FoodProperties.Builder()
+                                    .nutrition(0)
+                                    .saturationModifier(0.25F)
+                                    .fast()
+                                    .alwaysEdible()
+                                    .build())));
+
+
     //曲奇发射器
     public static final DeferredItem<Item> COOKIE_LAUNCHER =
             ITEMS.register("cookie_launcher", () -> new CookieLauncherItem(

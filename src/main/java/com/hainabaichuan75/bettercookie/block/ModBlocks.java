@@ -28,6 +28,11 @@ public class ModBlocks {
             registerBlock("berry_cookie_block",() -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.1F).sound(SoundType.GRASS)));
 
+    //糖霜曲奇块
+    public static final DeferredBlock<Block> FROSTED_COOKIE_BLOCK =
+            registerBlock("frosted_cookie_block",() -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.1F).sound(SoundType.GRASS)));
+
     //曲奇树原木
     public static class CookieLogBlock extends RotatedPillarBlock {
         public CookieLogBlock(Properties properties) {
