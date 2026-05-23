@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "bettercookie:block/cookie_log_top",
+    "side": "bettercookie:block/cookie_log_side"
+  }
+}

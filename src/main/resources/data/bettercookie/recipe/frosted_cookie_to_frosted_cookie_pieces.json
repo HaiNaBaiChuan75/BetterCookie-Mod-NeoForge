@@ -1,12 +1,11 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "bettercookie_alternatives_cookie",
   "category": "misc",
   "ingredients": [
-    { "item": "bettercookie:cookie_block" }
+    { "item": "bettercookie:frosted_cookie" }
   ],
   "result": {
     "count": 8,
-    "id": "minecraft:cookie"
+    "id": "bettercookie:frosted_cookie_pieces"
   }
 }

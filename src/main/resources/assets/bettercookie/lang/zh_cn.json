@@ -1,10 +1,21 @@
 {
-  "item.bettercookie.cookie_pieces": "曲奇碎",
+
   "block.bettercookie.cookie_block": "曲奇块",
+  "block.bettercookie.berry_cookie_block": "浆果曲奇块",
+  "block.bettercookie.frosted_cookie_block": "糖霜曲奇块",
+
+  "block.bettercookie.cookie_log": "曲奇原木",
+  "block.bettercookie.berry_cookie_log": "浆果曲奇原木",
+  "block.bettercookie.frosted_cookie_log": "糖霜曲奇原木",
 
   "item.bettercookie.berry_cookie": "浆果曲奇",
+  "item.bettercookie.frosted_cookie": "糖霜曲奇",
+
+  "item.bettercookie.cookie_pieces": "曲奇碎",
   "item.bettercookie.berry_cookie_pieces": "浆果曲奇碎",
-  "block.bettercookie.berry_cookie_block": "浆果曲奇块",
+  "item.bettercookie.frosted_cookie_pieces": "糖霜曲奇碎",
+  "item.bettercookie.cookie_launcher": "曲奇发射器",
+
 
   "itemGrop.bettercookie_tab": "更好的曲奇",
 
@@ -17,7 +28,7 @@
   "examplemod.configuration.title": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml.title": "Example Mod Configs",
-  "examplemod.configuration.items": "Item List",
+  "examplemod.configuration.items": "物品列表",
   "examplemod.configuration.logDirtBlock": "Log Dirt Block",
   "examplemod.configuration.magicNumberIntroduction": "Magic Number Text",
   "examplemod.configuration.magicNumber": "Magic Number"

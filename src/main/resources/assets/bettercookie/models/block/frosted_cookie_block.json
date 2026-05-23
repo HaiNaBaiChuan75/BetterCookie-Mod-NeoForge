@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "bettercookie:block/cookie_block"
+    "all": "bettercookie:block/frosted_cookie_block"
   }
 }

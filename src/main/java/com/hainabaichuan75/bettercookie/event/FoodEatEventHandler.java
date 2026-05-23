@@ -24,7 +24,11 @@ public class FoodEatEventHandler {
     private static void onStartEating(LivingEntityUseItemEvent.Start event) {
         ItemStack stack = event.getItem();
         // 只处理原版曲奇和你的模组曲奇
-        if (stack.is(Items.COOKIE) || stack.is(ModItems.BERRY_COOKIE)) {
+        if (
+                stack.is(Items.COOKIE) ||
+                stack.is(ModItems.BERRY_COOKIE)||
+                stack.is(ModItems.FROSTED_COOKIE)
+        ) {
             try {
                 boolean fast = ModConfig.ENABLE_VANILLA_COOKIE_FAST_EAT.get();
                 if (fast) {
@@ -40,7 +44,12 @@ public class FoodEatEventHandler {
     private static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
         Player player = event.getEntity();
         ItemStack stack = event.getItemStack();
-        if (!stack.is(Items.COOKIE) && !stack.is(ModItems.BERRY_COOKIE)) return;
+        if (
+                !stack.is(Items.COOKIE) &&
+                !stack.is(ModItems.BERRY_COOKIE)&&
+                !stack.is(ModItems.FROSTED_COOKIE)
+
+        ) return;
 
         // 从配置读取是否允许饱腹吃（默认 true）
         boolean alwaysEdible = ModConfig.VANILLA_COOKIE_ALWAYS_EDIBLE.get();
