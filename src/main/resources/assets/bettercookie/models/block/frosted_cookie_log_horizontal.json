@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column_horizontal",
+  "textures": {
+    "end": "bettercookie:block/frosted_cookie_log_horizontal_top",
+    "side": "bettercookie:block/frosted_cookie_log_horizontal_side"
+  }
+}

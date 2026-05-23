@@ -53,6 +53,12 @@ public class ModBlocks {
                     .strength(2.0f)
                     .requiresCorrectToolForDrops()));
 
+    //糖霜曲奇原木
+    public static final DeferredBlock<Block> FROSTED_COOKIE_LOG =
+            registerBlock("frosted_cookie_log", () -> new CookieLogBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0f)
+                    .requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {

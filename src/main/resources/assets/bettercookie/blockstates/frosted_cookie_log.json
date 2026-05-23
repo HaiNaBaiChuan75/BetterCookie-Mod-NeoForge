@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "bettercookie:block/berry_cookie_log_horizontal",
+      "model": "bettercookie:block/frosted_cookie_log_horizontal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "bettercookie:block/berry_cookie_log"
+      "model": "bettercookie:block/frosted_cookie_log"
     },
     "axis=z": {
-      "model": "bettercookie:block/berry_cookie_log_horizontal",
+      "model": "bettercookie:block/frosted_cookie_log_horizontal",
       "x": 90
     }
   }

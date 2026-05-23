@@ -52,7 +52,10 @@ public class CookieLauncherItem extends Item {
 
     private boolean isValidAmmo(ItemStack stack) {
         // 判断是否为曲奇类弹药，可以改成使用标签 (Tag)
-        return stack.is(Items.COOKIE) || stack.is(ModItems.BERRY_COOKIE.get());
+        return
+                stack.is(Items.COOKIE) ||
+                stack.is(ModItems.BERRY_COOKIE.get()
+                );
         // 如果你没有其他曲奇，暂时只用一项测试，但必须有一个有效的弹药物品注册
     }
 }
