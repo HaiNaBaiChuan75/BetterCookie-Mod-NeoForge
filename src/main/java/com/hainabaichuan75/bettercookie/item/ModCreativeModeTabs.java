@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FROSTED_COOKIE_BLOCK);
 
                         output.accept(ModBlocks.COOKIE_LOG);
+                        output.accept(ModBlocks.BERRY_COOKIE_LOG);
+                        output.accept(ModBlocks.FROSTED_COOKIE_LOG);
 
                         output.accept(Items.COOKIE);
                         output.accept(ModItems.BERRY_COOKIE);

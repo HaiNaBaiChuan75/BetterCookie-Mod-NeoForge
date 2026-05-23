@@ -40,10 +40,19 @@ public class ModBlocks {
         }
     }
     public static final DeferredBlock<Block> COOKIE_LOG =
-         registerBlock("cookie_log", () -> new CookieLogBlock(BlockBehaviour.Properties.of()
-                 .mapColor(MapColor.WOOD)
-                 .strength(2.0f)
-                 .requiresCorrectToolForDrops()));
+            registerBlock("cookie_log", () -> new CookieLogBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0f)
+                    .requiresCorrectToolForDrops()));
+
+
+    //浆果曲奇原木
+    public static final DeferredBlock<Block> BERRY_COOKIE_LOG =
+            registerBlock("berry_cookie_log", () -> new CookieLogBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.WOOD)
+                    .strength(2.0f)
+                    .requiresCorrectToolForDrops()));
+
 
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
